@@ -2,6 +2,13 @@ import { SectionHeader } from '@/components/home/section-header';
 import { Feature as FeatureComponent } from '@/components/home/ui/feature-slideshow';
 import { siteConfig } from '@/lib/home';
 
+type FeatureItem = {
+  id: number;
+  title: string;
+  description: string;
+  content: React.ReactNode;
+};
+
 export function FeatureSection() {
   const { title, description, items } = siteConfig.featureSection;
 

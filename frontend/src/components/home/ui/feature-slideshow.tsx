@@ -80,7 +80,7 @@ AccordionContent.displayName = 'AccordionContent';
 type FeatureItem = {
   id: number;
   title: string;
-  content: string;
+  content: React.ReactNode;
   image?: string;
   video?: string;
 };

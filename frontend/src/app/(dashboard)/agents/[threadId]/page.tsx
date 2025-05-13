@@ -1221,7 +1221,7 @@ export default function ThreadPage({
   useEffect(() => {
     if (projectName) {
       // Update document title when project name changes
-      document.title = `${projectName} | Kortix Suna`;
+      document.title = `${projectName} | LGCNS Luxia`;
 
       // Update meta tags for SEO
       const metaDescription = document.querySelector(
@@ -1230,14 +1230,14 @@ export default function ThreadPage({
       if (metaDescription) {
         metaDescription.setAttribute(
           'content',
-          `${projectName} - Interactive agent conversation powered by Kortix Suna`,
+          `${projectName} - Interactive agent conversation powered by LGCNS Luxia`,
         );
       }
 
       // Update OpenGraph tags if they exist
       const ogTitle = document.querySelector('meta[property="og:title"]');
       if (ogTitle) {
-        ogTitle.setAttribute('content', `${projectName} | Kortix Suna`);
+        ogTitle.setAttribute('content', `${projectName} | LGCNS Luxia`);
       }
 
       const ogDescription = document.querySelector(
@@ -1866,7 +1866,7 @@ export default function ThreadPage({
                         <div className="flex-shrink-0 w-5 h-5 rounded-md flex items-center justify-center overflow-hidden bg-primary/10">
                           <Image
                             src="/kortix-symbol.svg"
-                            alt="Suna"
+                            alt="Luxia"
                             width={14}
                             height={14}
                             className="object-contain"
@@ -1908,7 +1908,7 @@ export default function ThreadPage({
             value={newMessage}
             onChange={setNewMessage}
             onSubmit={handleSubmitMessage}
-            placeholder="Ask Suna anything..."
+            placeholder="Ask Luxia anything..."
             loading={isSending}
             disabled={
               isSending ||
